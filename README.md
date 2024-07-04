@@ -176,7 +176,7 @@ output {
 curl -XPOST -D- "http://localhost:5601/api/saved_objects/index-pattern" \
     -H "Content-Type: application/json" \
     -H "kbn-version: 6.1.0" \
-    -d "{'attributes':{'title':'logstash-*','timeFieldName':'@timestamp'}}"
+    -d '{"attributes":{"title":"logstash-*","timeFieldName":"@timestamp"}}'
 ```
 
 如果你是 Windows 用戶，請用其他方法，雖然 Windows 也有 curl，但我裝上去執行指令，
