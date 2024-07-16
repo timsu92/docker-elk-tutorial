@@ -179,6 +179,11 @@ curl -XPOST -D- "http://localhost:5601/api/saved_objects/index-pattern" \
     -d '{"attributes":{"title":"logstash-*","timeFieldName":"@timestamp"}}'
 ```
 
+如果上面的指令有報有關json格式錯誤的問題，也可以試試看將最後一行改為：
+```cmd
+    -d "{'attributes':{'title':'logstash-*','timeFieldName':'@timestamp'}}"
+```
+
 如果你是 Windows 用戶，請用其他方法，雖然 Windows 也有 curl，但我裝上去執行指令，
 
 他都會報錯說 josn格式錯誤，所以我直接改用 [Postman](https://www.getpostman.com/)
